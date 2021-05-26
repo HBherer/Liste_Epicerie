@@ -90,10 +90,12 @@
     color: #d5d6db;
   }
 }
+// Cération liste d'épicerie
 .creatList{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  height: auto;
   padding: 10px 40px;
   border-radius: 12px;
   box-shadow: 2px 2px 4px #dcdcdc;
@@ -101,20 +103,36 @@
 }
 .creatList > h2{
   width: 100%;
-
   text-align: start;
 }
+.creatListArea{
+  margin: 45px 0px 20px 0px;
+  width: 40%;
+  padding-right: 26px;
+}
 .enterNameList{
-  width: 100%;
+  margin: 10px 30% 10px 0px;
+  padding: 10px;
+  width: 70%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #2c3e50;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px #5e5e5e;
+  &:focus{
+    border: none;
+    background-color: #dbdbdb;
+  }
 }
 .imgCreatListe{
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin: 5px 1px 20px 5px;
   width: 20%;
 }
 .imgCreatListe > img{
   width: 100%;
 }
+
 
 
 .addItem{
@@ -141,6 +159,12 @@
   .addListe{
     width: 100%;
   }
+  .enterNameList{
+    width: 100%;
+  }
+  .imgCreatListe{
+    width: 30%;
+  }
 }
 @media screen and (max-width: 768px){
   .seeListG{
@@ -148,6 +172,15 @@
   }
   .seeHambergerNav{
     display: inline;
+  }
+  .imgCreatListe{
+    width: 70%;
+  }
+  .creatList{
+    padding: 10px 20px;
+  }
+  .creatListArea{
+    width: 100%;
   }
 }
 //Faites des imports de vos fichiers smacss

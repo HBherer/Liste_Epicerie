@@ -8,14 +8,17 @@
       <p><router-link class="navLink lightText" to="/voir-tous">Voir tous les produits</router-link></p>
     </span>
   </div>
-  <div class="creatList">
-    <h2>Nouvelle liste d'épicerie</h2>
-    <div>
-      <input class="enterNameList" type="text" v-model="nom"/>
-      <button type="submit" @click=creerListe>Créer</button>
-    </div>
-    <div class="imgCreatListe">
-      <img class="" src="/img/imgApp/document.png">
+  <div class="displayFlex">
+    <div class="creatList lightText">
+      <h2>Nouvelle liste d'épicerie</h2>
+      <div class="creatListArea">
+        <label class="h3" for="creatList">Entrez le nom de votre nouvelle liste</label>
+        <input class="enterNameList" id="creatList" name="creatList" type="text" v-model="nom"/>
+        <button class="btnSecondary" type="submit" @click=creerListe>Créer</button>
+      </div>
+      <div class="imgCreatListe">
+        <img class="" src="/img/imgApp/document.png">
+      </div>
     </div>
   </div>
 
