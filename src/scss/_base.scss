@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html{
+  background-color: #F2F3F7;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.logo{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+h1, .h1{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+h2, .h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+h3, .h3{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+h4, .h4{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+.btnPrimary{
+  background-color: #058373;
+  padding: 15px 25px;
+  text-align: center;
+  border-radius: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #F2F3F8;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 2px 2px 4px #dcdcdc;
+  &:hover{
+    background-color: #047668;
+  }
+  &:visited{
+    border: solid 2px #2c3e50;
+  }
+}
+.btnSecondary{
+  background-color: #F2F3F8;
+  padding: 15px 25px;
+  text-align: center;
+  border-radius: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #2c3e50;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 2px 2px 4px #5e5e5e;
+  &:hover{
+    background-color: #e4e5ea;
+  }
+  &:visited{
+    border: solid 2px #2c3e50;
+  }
+}
+.lightText{
+  color: #FFFFFF;
+}

@@ -1,13 +1,37 @@
 <template>
+
 <div>
-    <router-link to="/creer">Créer Liste</router-link>
+  <div class="topNav">
+    <div class="logo">ListeÉpicerie</div>
+    <p><router-link class="btnPrimary" to="/voir-tous">Voir tous les produits</router-link></p>
+  </div>
+
+<div class="displayFlex">
+  <div class="lists">
     <h2>Listes</h2>
-    <p v-for="(liste, index) in this.donnees" :key="index">
-        <router-link :to="{ path: 'liste', query: { id: index }}">
-            {{liste.nom}}
+    <div v-for="(liste, index) in this.donnees" :key="index" >
+      <p>
+        <router-link class="h3 titleSection" :to="{ path: 'liste', query: { id: index }}">
+          {{liste.nom}}
         </router-link>
-    </p>
-    <p><router-link to="/voir-tous">Voir tous les produits</router-link></p>
+      </p>
+      <div class="ligne"></div>
+    </div>
+  </div>
+  <div class="addListe">
+    <h2 class="lightText">Créer votre liste d'épicerie en ligne</h2>
+    <div class="addListeSecG">
+      <p class="texteAddList lightText">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </p>
+      <p><router-link class="btnSecondary" to="/creer">Créer Liste</router-link></p>
+    </div>
+    <div class="imgAddListe">
+      <img class="" src="/img/imgApp/liste-de-courses.png">
+    </div>
+  </div>
+</div>
+
 </div>
 
 </template>
