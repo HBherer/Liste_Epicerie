@@ -1,16 +1,26 @@
 <template>
 <div>
-  <div v-if="this.editable">
-    <input type="text" id="recherche" v-model="texteRecherche" @keyup="lancerRecherche"/>
-    <div id="resutats-recherche">
-    <p v-for="(item, index) in resultatsRecherche"
-    @click="ajouterItem(resultatsRecherche[index].nom, resultatsRecherche[index].prix, resultatsRecherche[index].id)" :key="index">
-    {{resultatsRecherche[index].nom}}</p>
-    </div>
+  <div class="topNav">
+    <div><router-link class="logo" to="/">ListeÉpicerie</router-link></div>
+    <p><router-link class="btnPrimary seeListG" to="/voir-tous">Voir tous les produits</router-link></p>
+    <img @click=showNav() class="seeHambergerNav" src="/img/imgApp/bergerNav.png">
+    <span id="showNavC" class="contentNav displayNone">
+      <p><router-link class="navLink lightText" to="/voir-tous">Voir tous les produits</router-link></p>
+    </span>
   </div>
+  <div class="addItem displayFlex">
+    <div v-if="this.editable">
+      <input type="text" class="inputRecherche" id="recherche" v-model="texteRecherche" @keyup="lancerRecherche"/>
+      <div id="resutats-recherche">
+        <p v-for="(item, index) in resultatsRecherche"
+           @click="ajouterItem(resultatsRecherche[index].nom, resultatsRecherche[index].prix, resultatsRecherche[index].id)" :key="index">
+          {{resultatsRecherche[index].nom}}</p>
+      </div>
+    </div>
     <div><ligne @maj="onMaj" v-for="(item, index) in items" :key="index" :id="item.id" :nom="item.nom" :prix="item.prix" :editable="editable"/></div>
-{{total}}
-<button v-if="this.editable" @click="sauvegarder">Sauvegarder</button>
+    {{total}}
+    <button v-if="this.editable" @click="sauvegarder">Sauvegarder</button>
+  </div>
 </div>
 
 </template>
@@ -75,7 +85,25 @@ export default {
           }
         })
       } else {
-        this.resultatsRecherche = []
+        this.resultatsRecherche = [
+          { nom: 'Tomate', prix: '2', id: '1' },
+          { nom: 'Poire', prix: '3', id: '2' },
+          { nom: 'Orange', prix: '1', id: '3' },
+          { nom: 'Pomme', prix: '2', id: '4' },
+          { nom: 'Mangue', prix: '4', id: '5' },
+          { nom: 'Raisin', prix: '1', id: '6' },
+          { nom: 'Peche', prix: '2', id: '7' }
+        ]
+      }
+    },
+    showNav: function () {
+      var nav = document.getElementById('showNavC')
+      if (nav.classList.contains('displayBlock') === true) {
+        nav.classList.remove('displayBlock')
+        nav.classList.add('displayNone')
+      } else {
+        nav.classList.remove('displayNone')
+        nav.classList.add('displayBlock')
       }
     }
   }

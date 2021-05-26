@@ -12,16 +12,13 @@
   margin-bottom: 50px;
 }
 .lists{
-  flex-wrap: wrap;
+  flex-grow: 2;
   background-color: #ffffff;
   padding: 10px 30px;
-  width: 55%;
   margin: 0px 50px 50px 0px;
   border-radius: 12px;
   height: auto;
   box-shadow: 2px 2px 4px #dcdcdc;
-}
-.lists > h2{
 }
 .titleSection{
   text-decoration: none;
@@ -34,7 +31,6 @@
   height: 2px;
   background-color: #dcdcdc;
 }
-
 .addListe{
   display: flex;
   justify-content: space-between;
@@ -61,5 +57,97 @@
 .imgAddListe > img{
   width: 100%;
 }
+.seeHambergerNav{
+  display: none;
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  &:hover{
+    border: solid 1px #2c3e50;
+  }
+}
+.displayNone{
+  display: none;
+}
+.displayBlock{
+  display: flex;
+}
+.contentNav{
+  background-color: #058373;
+  top: 70px;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px #dcdcdc;
+}
+.navLink{
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  &:hover{
+    color: #d5d6db;
+  }
+}
+.creatList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 40px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px #dcdcdc;
+  background-color: #058373;
+}
+.creatList > h2{
+  width: 100%;
 
+  text-align: start;
+}
+.enterNameList{
+  width: 100%;
+}
+.imgCreatListe{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 20%;
+}
+.imgCreatListe > img{
+  width: 100%;
+}
+
+
+.addItem{
+  background-color: #058373;
+  width: 100%;
+  padding: 15px;
+}
+.inputRecherche{
+
+}
+@media screen and (min-width: 769px){
+  .contentNav{
+    display: none;
+  }
+}
+@media screen and (max-width: 992px){
+  .lists{
+    width: 100%;
+    margin: 0px;
+  }
+  .displayFlex{
+    justify-content: center;
+  }
+  .addListe{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px){
+  .seeListG{
+    display: none;
+  }
+  .seeHambergerNav{
+    display: inline;
+  }
+}
 //Faites des imports de vos fichiers smacss
