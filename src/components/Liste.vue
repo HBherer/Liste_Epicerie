@@ -8,18 +8,34 @@
       <p><router-link class="navLink lightText" to="/voir-tous">Voir tous les produits</router-link></p>
     </span>
   </div>
-  <div class="addItem displayFlex">
-    <div v-if="this.editable">
-      <input type="text" class="inputRecherche" id="recherche" v-model="texteRecherche" @keyup="lancerRecherche"/>
-      <div id="resutats-recherche">
-        <p v-for="(item, index) in resultatsRecherche"
-           @click="ajouterItem(resultatsRecherche[index].nom, resultatsRecherche[index].prix, resultatsRecherche[index].id)" :key="index">
-          {{resultatsRecherche[index].nom}}</p>
+  <div class="displayFlexNoR">
+    <div class="addItem">
+      <h2>Remplir votre liste</h2>
+      <div v-if="this.editable">
+        <label class="h3" for="recherche">Entrez l'item recherché</label>
+        <input type="text" class="inputRecherche" id="recherche" v-model="texteRecherche" @keyup="lancerRecherche"/>
+        <div id="resutats-recherche">
+          <h3>Article(s):</h3>
+          <p class="resultItems" v-for="(item, index) in resultatsRecherche"
+             @click="ajouterItem(resultatsRecherche[index].nom, resultatsRecherche[index].prix, resultatsRecherche[index].id)" :key="index">
+            {{resultatsRecherche[index].nom}}</p>
+        </div>
       </div>
     </div>
-    <div><ligne @maj="onMaj" v-for="(item, index) in items" :key="index" :id="item.id" :nom="item.nom" :prix="item.prix" :editable="editable"/></div>
-    {{total}}
-    <button v-if="this.editable" @click="sauvegarder">Sauvegarder</button>
+    <div class="validationList lightText">
+      <div class="sec1">
+        <h2 class="validationListTop">Sommaire</h2>
+        <p class="h2">Coût total: {{total}} $</p>
+        <button class="btnSecondary" v-if="this.editable" @click="sauvegarder">Sauvegarder</button>
+      </div>
+      <div class="imgAddItemList">
+        <img src="/img/imgApp/facture.png">
+      </div>
+    </div>
+    <div class="contentList">
+      <h3>Vos item(s)</h3>
+      <ligne @maj="onMaj" v-for="(item, index) in items" :key="index" :id="item.id" :nom="item.nom" :prix="item.prix" :editable="editable"/>
+    </div>
   </div>
 </div>
 
@@ -109,7 +125,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

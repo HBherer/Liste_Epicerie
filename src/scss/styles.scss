@@ -3,7 +3,12 @@
 .displayFlex{
   display: flex;
   flex-wrap: wrap-reverse;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.displayFlexNoR{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .topNav{
   display: flex;
@@ -132,17 +137,92 @@
 .imgCreatListe > img{
   width: 100%;
 }
-
-
-
+// page liste
 .addItem{
-  background-color: #058373;
-  width: 100%;
-  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  flex-grow: 2;
+  padding: 10px 40px;
+  margin: 0px 50px 50px 0px;
+  box-shadow: 2px 2px 4px #dcdcdc;
 }
 .inputRecherche{
-
+  margin: 10px 30% 10px 0px;
+  padding: 10px;
+  width: 60%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #2c3e50;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px #5e5e5e;
+  &:focus{
+    border: none;
+    background-color: rgb(224, 224, 224);
+  }
 }
+#resutats-recherche{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#resutats-recherche > h3{
+  margin-left: 10px;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #2c3e50;
+}
+.resultItems{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #F2F3F8;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 12px;
+  background-color: #058373;
+  box-shadow: 2px 2px 4px #5e5e5e;
+}
+.contentList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px #dcdcdc;
+}
+.contentList > h3{
+  width: 100%;
+  margin: 15px 0px 40px 30px;
+}
+.validationList{
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  padding: 10px 40px;
+  background-color: #058373;
+  border-radius: 12px;
+  margin: 0px 50px 50px 0px;
+  box-shadow: 2px 2px 4px #dcdcdc;
+}
+.validationListTop{
+  width: 100%;
+}
+.sec1{
+  width: 60%;
+}
+.imgAddItemList{
+  margin: 10% 1px 20px 5px;
+  width: 35%;
+}
+.imgAddItemList > img{
+  width: 100%;
+}
+
+// media query
 @media screen and (min-width: 769px){
   .contentNav{
     display: none;
