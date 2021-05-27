@@ -11,7 +11,7 @@
     <div>
       Nombre de produits : {{produits.length}}
       <div id="produits">
-        <p v-for="(produits, index) in produits" :key="index">{{produits.nom}} - {{produits.prix}} $
+        <p v-for="(produits, index) in produits" :key="index">{{produits.nom}} {{produits.prix}} $
         </p>
       </div>
     </div>
