@@ -12,7 +12,6 @@
 export default {
   name: 'ligne',
   data: function () {
-    console.log(this.editable)
     return {
       qte: 1
     }

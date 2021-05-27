@@ -8,6 +8,7 @@ window.urlServiceWeb = urlServiceWeb
 // inclusion de JQuery. Si vous ne le prenez pas, enlevez ces deux lignes et faites npm uninstall jquery
 const $ = require('jquery')
 window.$ = $
+require('jquery-validation')
 
 Vue.config.productionTip = false
 new Vue({
