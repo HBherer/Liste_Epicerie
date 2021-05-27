@@ -39,18 +39,6 @@ export default {
     return {
       donnees: donnees
     }
-  },
-  methods: {
-    showNav: function () {
-      var nav = document.getElementById('showNavC')
-      if (nav.classList.contains('displayBlock') === true) {
-        nav.classList.remove('displayBlock')
-        nav.classList.add('displayNone')
-      } else {
-        nav.classList.remove('displayNone')
-        nav.classList.add('displayBlock')
-      }
-    }
   }
 }
 </script>
