@@ -16,12 +16,11 @@ def obtenir_items():
     connexion = obtenir_connexion()
     cur = connexion.cursor()
     cur.execute(
-        "SELECT * FROM produits limit 5")
+        "SELECT * FROM item")
     resultat = cur.fetchall() 	# retourne tous les résultats et on doit boucler dessus
     liste = []
     for rangee in resultat:
-        liste.append({"id": rangee[0], "nom": rangee[1],
-                  "prix": rangee[2], "unite": rangee[3]})
+        liste.append({"item": rangee[0], "prix": rangee[1]})
     return json.dumps(liste)
 
 

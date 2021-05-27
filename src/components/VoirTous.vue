@@ -4,8 +4,8 @@
       <h2>Voici tout les items qui sont disponible</h2>
       <p>Nombre de produits : {{produits.length}}</p>
       <div id="produits">
-        <p>nom: Tomate Prix: 2$</p>
-        <p v-for="(produits, index) in produits" :key="index"> {{produits.nom}} {{produits.prix}} $</p>
+        <p v-for="(produits, index) in produits" :key="index">{{produits.nom}} {{produits.prix}} $
+        </p>
       </div>
     </div>
   </div>

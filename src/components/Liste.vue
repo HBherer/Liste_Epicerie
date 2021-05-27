@@ -94,15 +94,7 @@ export default {
           }
         })
       } else {
-        this.resultatsRecherche = [
-          { nom: 'Tomate', prix: '2', id: '1' },
-          { nom: 'Poire', prix: '3', id: '2' },
-          { nom: 'Orange', prix: '1', id: '3' },
-          { nom: 'Pomme', prix: '2', id: '4' },
-          { nom: 'Mangue', prix: '4', id: '5' },
-          { nom: 'Raisin', prix: '1', id: '6' },
-          { nom: 'Peche', prix: '2', id: '7' }
-        ]
+        this.resultatsRecherche = []
       }
     }
   }
