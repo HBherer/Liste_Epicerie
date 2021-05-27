@@ -11,7 +11,7 @@ def index():  # le nom n’est pas important pour le système
     return 'Page d’accueil'
 
 @cross_origin()
-@app.route('/item')
+@app.route('/items')
 def obtenir_items():
     connexion = obtenir_connexion()
     cur = connexion.cursor()
@@ -20,7 +20,7 @@ def obtenir_items():
     resultat = cur.fetchall() 	# retourne tous les résultats et on doit boucler dessus
     liste = []
     for rangee in resultat:
-        liste.append({"item": rangee[0], "prix": rangee[1]})
+        liste.append({"id": rangee[0], "nom": rangee[1], "prix": rangee[2], "unite": rangee[3]})
     return json.dumps(liste)
 
 
@@ -29,7 +29,7 @@ def obtenir_item(id):
     connexion = obtenir_connexion()
     cur = connexion.cursor()
     cur.execute(
-        "SELECT * FROM produits where id = %s", (id,))
+        "SELECT * FROM item where id = %s", (id,))
     resultat = cur.fetchall() 	# retourne tous les résultats et on doit boucler dessus
     liste = []
     for rangee in resultat:
