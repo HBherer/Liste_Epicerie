@@ -24,12 +24,12 @@ def obtenir_items():
     return json.dumps(liste)
 
 
-@app.route('/items/<id>')
-def obtenir_item(id):
+@app.route('/items/<nom>')
+def obtenir_item(nom):
     connexion = obtenir_connexion()
     cur = connexion.cursor()
     cur.execute(
-        "SELECT * FROM item where id = %s", (id,))
+        "SELECT * FROM item where nom like %s", ("{}%".format(nom),))
     resultat = cur.fetchall() 	# retourne tous les résultats et on doit boucler dessus
     liste = []
     for rangee in resultat:
