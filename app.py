@@ -16,7 +16,7 @@ def obtenir_items():
     connexion = obtenir_connexion()
     cur = connexion.cursor()
     cur.execute(
-        "SELECT * FROM produits limit 5")
+        "SELECT * FROM item")
     resultat = cur.fetchall() 	# retourne tous les résultats et on doit boucler dessus
     liste = []
     for rangee in resultat:
