@@ -1,4 +1,5 @@
 @import "_base";
+@import "layout";
 
 .displayFlex{
   display: flex;
@@ -10,11 +11,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.topNav{
+
+.logoPosition{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 50px;
 }
 .lists{
   flex-grow: 2;
@@ -41,7 +40,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 32%;
-  margin-bottom: 30%;
+  margin-bottom: 50px;
   background-color: #047668;
   padding: 10px 30px;
   border-radius: 12px;
@@ -227,6 +226,23 @@
     display: none;
   }
 }
+@media screen and (max-width: 1100px){
+  .validationList{
+    width: 100%;
+    height: 50%;
+    margin-right: 0px;
+  }
+  .addItem{
+    width: 100%;
+    margin-right: 0px;
+  }
+  .imgAddItemList{
+    margin: 5px;
+  }
+  .validationList{
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 992px){
   .lists{
     width: 100%;
@@ -245,6 +261,10 @@
   .imgCreatListe{
     width: 30%;
   }
+  .imgAddItemList{
+    width: 30%;
+    margin: 5px;
+  }
 }
 @media screen and (max-width: 768px){
   .seeListG{
@@ -261,6 +281,13 @@
   }
   .creatListArea{
     width: 100%;
+  }
+  #resutats-recherche{
+    width: 100%;
+  }
+  .imgAddItemList{
+    width: 36%;
+    margin: 25px 5px;
   }
 }
 //Faites des imports de vos fichiers smacss

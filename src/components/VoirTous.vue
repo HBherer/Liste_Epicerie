@@ -1,23 +1,14 @@
 <template>
   <div>
-    <div class="topNav">
-      <div><router-link class="logo" to="/">ListeÉpicerie</router-link></div>
-      <p><router-link class="btnPrimary seeListG" to="/voir-tous">Voir tous les produits</router-link></p>
-      <img @click=showNav() class="seeHambergerNav" src="/img/imgApp/bergerNav.png">
-      <span id="showNavC" class="contentNav displayNone">
-      <p><router-link class="navLink lightText" to="/voir-tous">Voir tous les produits</router-link></p>
-    </span>
-    </div>
     <div>
-      Nombre de produits : {{produits.length}}
+      <h2>Voici tout les items qui sont disponible</h2>
+      <p>Nombre de produits : {{produits.length}}</p>
       <div id="produits">
         <p v-for="(produits, index) in produits" :key="index">{{produits.nom}} {{produits.prix}} $
         </p>
       </div>
     </div>
-
   </div>
-
 </template>
 
 <script>
@@ -37,18 +28,6 @@ export default {
         self.produits = JSON.parse(donnees)
       }
     })
-  },
-  methods: {
-    showNav: function () {
-      var nav = document.getElementById('showNavC')
-      if (nav.classList.contains('displayBlock') === true) {
-        nav.classList.remove('displayBlock')
-        nav.classList.add('displayNone')
-      } else {
-        nav.classList.remove('displayNone')
-        nav.classList.add('displayBlock')
-      }
-    }
   }
 }
 </script>

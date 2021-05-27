@@ -1,13 +1,5 @@
 <template>
 <div>
-  <div class="topNav">
-    <div class="logo">ListeÉpicerie</div>
-    <p><router-link class="btnPrimary seeListG" to="/voir-tous">Voir tous les produits</router-link></p>
-    <img @click=showNav() class="seeHambergerNav" src="/img/imgApp/bergerNav.png">
-    <span id="showNavC" class="contentNav displayNone">
-      <p><router-link class="navLink lightText" to="/voir-tous">Voir tous les produits</router-link></p>
-    </span>
-  </div>
 <div class="displayFlex">
   <div class="lists">
     <h2>Listes</h2>
@@ -46,18 +38,6 @@ export default {
     const donnees = JSON.parse(listes)
     return {
       donnees: donnees
-    }
-  },
-  methods: {
-    showNav: function () {
-      var nav = document.getElementById('showNavC')
-      if (nav.classList.contains('displayBlock') === true) {
-        nav.classList.remove('displayBlock')
-        nav.classList.add('displayNone')
-      } else {
-        nav.classList.remove('displayNone')
-        nav.classList.add('displayBlock')
-      }
     }
   }
 }

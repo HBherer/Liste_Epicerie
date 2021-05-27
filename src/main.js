@@ -1,11 +1,10 @@
 import Vue from 'vue'
-import App from './App.vue' // Notre application
+import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
-import './scss/styles.scss' // votre fichier de style qui importe tous les autres.
+import './scss/styles.scss'
 const urlServiceWeb = 'http://127.0.0.1:5000/'
 window.urlServiceWeb = urlServiceWeb
-// inclusion de JQuery. Si vous ne le prenez pas, enlevez ces deux lignes et faites npm uninstall jquery
 const $ = require('jquery')
 window.$ = $
 require('jquery-validation')
