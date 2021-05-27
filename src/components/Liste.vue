@@ -1,7 +1,10 @@
 <template>
 <div>
   <div class="topNav">
-    <div><router-link class="logo" to="/">ListeÉpicerie</router-link></div>
+    <div class="logoPosition">
+      <img class="imgLogo" src="img/icons/android-chrome-512x512.png">
+      <p class="logo"><router-link class="router-link" to="/">ListeÉpicerie</router-link></p>
+    </div>
     <p><router-link class="btnPrimary seeListG" to="/voir-tous">Voir tous les produits</router-link></p>
     <img @click=showNav() class="seeHambergerNav" src="/img/imgApp/bergerNav.png">
     <span id="showNavC" class="contentNav displayNone">
