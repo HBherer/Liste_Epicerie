@@ -11,7 +11,7 @@ def index():  # le nom n’est pas important pour le système
     return 'Page d’accueil'
 
 @cross_origin()
-@app.route('/items')
+@app.route('/item')
 def obtenir_items():
     connexion = obtenir_connexion()
     cur = connexion.cursor()
