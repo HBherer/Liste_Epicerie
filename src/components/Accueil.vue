@@ -1,16 +1,5 @@
 <template>
 <div>
-  <div class="topNav">
-    <div class="logoPosition">
-      <img class="imgLogo" src="img/icons/android-chrome-512x512.png">
-      <p class="logo">ListeÉpicerie</p>
-    </div>
-    <p><router-link class="btnPrimary seeListG" to="/voir-tous">Voir tous les produits</router-link></p>
-    <img @click=showNav() class="seeHambergerNav" src="/img/imgApp/bergerNav.png">
-    <span id="showNavC" class="contentNav displayNone">
-      <p><router-link class="navLink lightText" to="/voir-tous">Voir tous les produits</router-link></p>
-    </span>
-  </div>
 <div class="displayFlex">
   <div class="lists">
     <h2>Listes</h2>
