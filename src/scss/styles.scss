@@ -41,11 +41,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 32%;
-  margin-bottom: 50px;
+  margin-bottom: 30%;
   background-color: #047668;
   padding: 10px 30px;
   border-radius: 12px;
-  height: auto;
+  height: 70%;
   box-shadow: 2px 2px 4px #dcdcdc;
 }
 .addListeSecG{
@@ -154,8 +154,8 @@
   font-weight: 700;
   color: #2c3e50;
   border: none;
+  background-color: #F2F3F7;
   border-radius: 12px;
-  box-shadow: 2px 2px 4px #5e5e5e;
   &:focus{
     border: none;
     background-color: rgb(224, 224, 224);
@@ -181,7 +181,6 @@
   margin: 10px;
   border-radius: 12px;
   background-color: #058373;
-  box-shadow: 2px 2px 4px #5e5e5e;
 }
 .contentList{
   display: flex;
@@ -237,6 +236,7 @@
     justify-content: center;
   }
   .addListe{
+    margin-bottom: 50px;
     width: 100%;
   }
   .enterNameList{

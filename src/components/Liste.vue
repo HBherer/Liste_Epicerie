@@ -10,10 +10,11 @@
   </div>
   <div class="displayFlexNoR">
     <div class="addItem">
-      <h2>Remplir votre liste</h2>
+      <h2 v-if="this.editable == false">Votre liste d'épicerie</h2>
       <div v-if="this.editable">
+        <h2>Remplir votre liste</h2>
         <label class="h3" for="recherche">Entrez l'item recherché</label>
-        <input type="text" class="inputRecherche" id="recherche" v-model="texteRecherche" @keyup="lancerRecherche"/>
+        <input type="text" class="inputRecherche" id="recherche" name="recherche" v-model="texteRecherche" @keyup="lancerRecherche"/>
         <div id="resutats-recherche">
           <h3>Article(s):</h3>
           <p class="resultItems" v-for="(item, index) in resultatsRecherche"

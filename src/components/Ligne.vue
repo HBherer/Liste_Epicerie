@@ -2,7 +2,7 @@
 <div class="items">
     <p class="nomItem">{{this.nom}}</p>
     <p class="AddRemoveItemToListe"  v-if="this.editable" @click=retrait()>-</p>
-    <p class="qteItem">{{this.qte}}</p>
+    <p class="qteItem">Qte: {{this.qte}}</p>
     <p class="AddRemoveItemToListe" v-if="this.editable"  @click=ajout()>+</p>
     <p class="prixItem">Total: {{totalLigne}} $</p>
 </div>
@@ -24,8 +24,12 @@ export default {
       this.$emit('maj', this.id, this.qte)
     },
     retrait: function () {
-      this.qte -= 1
-      this.$emit('maj', this.id, this.qte)
+      if (this.qte === 0) {
+        this.qte = 0
+      } else {
+        this.qte -= 1
+        this.$emit('maj', this.id, this.qte)
+      }
     }
   },
   computed: {
