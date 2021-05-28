@@ -2,8 +2,8 @@
   <div>
     <div class="entete lightText">
       <div class="textFruitAll">
-        <h2 class="countH">Voici tout les items qui sont disponible</h2>
-        <p>Nombre de produits différent: {{produits.length}}</p>
+        <h2 class="countH">Voici tous les items disponibles</h2>
+        <p>Nombre de produits différents: {{produits.length}}</p>
       </div>
       <div class="groupImgFruit">
         <img class="fruitImg" src="/img/imgApp/fruit-du-dragon.svg" alt="image fruit-du-dragon">

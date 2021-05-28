@@ -13,12 +13,12 @@
     </div>
   </div>
   <div class="addListe">
-    <h2 class="lightText">Créer votre liste d'épicerie en ligne</h2>
+    <h2 class="lightText">Créez votre liste d'épicerie en ligne</h2>
     <div class="addListeSecG">
       <p class="texteAddList lightText">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
       </p>
-      <p><router-link class="btnSecondary" to="/creer">Créer Liste</router-link></p>
+      <p><router-link class="btnSecondary" to="/creer">Créez votre Liste</router-link></p>
     </div>
     <div class="imgAddListe">
       <img class="" src="/img/imgApp/liste-de-courses.svg" alt="image liste">
