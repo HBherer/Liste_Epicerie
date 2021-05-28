@@ -22,7 +22,7 @@
         <button class="btnSecondary" v-if="this.editable" @click="sauvegarder">Sauvegarder</button>
       </div>
       <div class="imgAddItemList">
-        <img src="/img/imgApp/facture.png">
+        <img src="/img/imgApp/facture.svg" alt="image facture">
       </div>
     </div>
     <div class="contentList">
@@ -31,7 +31,6 @@
     </div>
   </div>
 </div>
-
 </template>
 
 <script>

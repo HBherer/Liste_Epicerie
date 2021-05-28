@@ -24,3 +24,40 @@
   justify-content: space-between;
   margin-bottom: 50px;
 }
+.logoPosition{
+   display: flex;
+}
+// Nav mobile
+.seeHambergerNav{
+  display: none;
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  &:hover{
+    border: solid 1px #2c3e50;
+  }
+}
+.displayNone{
+  display: none;
+}
+.displayBlock{
+  display: flex;
+}
+.contentNav{
+  background-color: #058373;
+  top: 70px;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px #dcdcdc;
+}
+.navLink{
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  &:hover{
+    color: #d5d6db;
+  }
+}

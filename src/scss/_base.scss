@@ -62,3 +62,17 @@ h4, .h4{
 .lightText{
   color: #FFFFFF;
 }
+.displayFlex{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+}
+.displayFlexNoR{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.errorRed{
+  color: #830505;
+  font-weight: bold;
+}

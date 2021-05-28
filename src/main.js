@@ -7,7 +7,6 @@ const urlServiceWeb = 'http://127.0.0.1:5000/'
 window.urlServiceWeb = urlServiceWeb
 const $ = require('jquery')
 window.$ = $
-require('jquery-validation')
 
 Vue.config.productionTip = false
 new Vue({

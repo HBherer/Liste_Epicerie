@@ -6,18 +6,18 @@
         <p>Nombre de produits différent: {{produits.length}}</p>
       </div>
       <div class="groupImgFruit">
-        <img class="fruitImg" src="/img/imgApp/fruit-du-dragon.png">
-        <img class="fruitImg" src="/img/imgApp/pasteque.png">
-        <img class="fruitImg" src="/img/imgApp/des-fruits(1).png">
-        <img class="fruitImg del" src="/img/imgApp/kiwi.png">
-        <img class="fruitImg" src="/img/imgApp/poire.png">
+        <img class="fruitImg" src="/img/imgApp/fruit-du-dragon.svg" alt="image fruit-du-dragon">
+        <img class="fruitImg" src="/img/imgApp/pasteque.svg" alt="image pasteque">
+        <img class="fruitImg" src="/img/imgApp/des-fruits.svg" alt="image fruits">
+        <img class="fruitImg del" src="/img/imgApp/kiwi.svg" alt="image kiwi">
+        <img class="fruitImg" src="/img/imgApp/poire.svg" alt="image poire">
       </div>
     </div>
     <div>
       <div id="produits">
         <div class="itemAll" v-for="(produits, index) in produits" :key="index">
           <p class="p1">{{produits.nom}}</p>
-          <img class="etiqette" src="/img/imgApp/marque.png">
+          <img class="etiqette" src="/img/imgApp/marque.svg" alt="image marque">
           <p class="p2">Prix: {{produits.prix}}$</p>
         </div>
       </div>
@@ -45,7 +45,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

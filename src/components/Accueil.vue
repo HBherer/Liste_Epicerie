@@ -21,13 +21,11 @@
       <p><router-link class="btnSecondary" to="/creer">Créer Liste</router-link></p>
     </div>
     <div class="imgAddListe">
-      <img class="" src="/img/imgApp/liste-de-courses.png">
+      <img class="" src="/img/imgApp/liste-de-courses.svg" alt="image liste">
     </div>
   </div>
 </div>
-
 </div>
-
 </template>
 
 <script>
