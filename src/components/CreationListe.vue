@@ -40,7 +40,7 @@ export default {
     },
     creerListe: function () {
       if (!this.nom) {
-        this.erreurs = ['Le nom ne doit pas être vide']
+        this.erreurs = ['Vous devez entrez un nom de liste']
       } else {
         let listes = localStorage.getItem('listes')
         let id
