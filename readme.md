@@ -8,7 +8,7 @@ Dans le cadre du cours Techniques d'Intégration 2 - Cégep Garneau
 
 1. Fork/Clone le dépôt
 
-1. Créez une base de donnée local MySQL nommée epicerie et importez les données fournies
+1. Créez une base de donnée locale MySQL nommée epicerie et importez les données fournies
 
 1. Lancez le backend Python en utilisant un terminal
 
@@ -36,15 +36,15 @@ Dans le cadre du cours Techniques d'Intégration 2 - Cégep Garneau
 
 1. Fork/Clone le dépôt
 
-1. Créez une base de donnée local MySQL nommée epicerie et importez les données fournies
+1. Créez une base de donnée locale MySQL nommée epicerie et importez les données fournies
 
 1. Lancez le backend Python en utilisant un terminal
 
     ```sh
     $ python -m venv venv 
-    $ source venv/bin/activate
+    $ .\venv\Scripts\activate
     (env)$ pip install -r requirements.txt
-    (env)$ python app.py
+    (env)$ python .\app.py
     ```
 
     Naviguez à l'adresse suivante : [http://localhost:5000](http://localhost:5000)
