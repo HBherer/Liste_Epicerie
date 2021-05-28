@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "ListeÉpicerie",
+    "short_name": "LÉ",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#047668",
-    "background_color": "#047668",
+    "theme_color": "#058373",
+    "background_color": "#F2F3F7",
     "display": "standalone"
 }
