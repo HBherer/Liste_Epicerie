@@ -5,8 +5,8 @@
       <h2 v-if="this.editable == false">Votre liste d'épicerie</h2>
       <div v-if="this.editable">
         <h2>Remplir votre liste</h2>
-        <label class="h3" for="recherche">Entrez l'item recherché</label>
-        <input type="text" class="inputRecherche" id="recherche" name="recherche" v-model="texteRecherche" @keyup="lancerRecherche"/>
+        <label class="h3" for="recherche">Entrez l'item recherché</label><br>
+        <input type="text" class="inputRecherche" id="recherche" name="recherche" placeholder="ex: Tomate" v-model="texteRecherche" @keyup="lancerRecherche"/>
         <div id="resutats-recherche">
           <h3>Article(s):</h3>
           <p class="resultItems" v-for="(item, index) in resultatsRecherche"
@@ -63,9 +63,7 @@ export default {
   },
   methods: {
     onMaj: function (id, valeur) {
-      console.log(id + ' ' + valeur)
       const items = this.items
-      console.log(items)
       for (let i = 0; i < items.length; i++) {
         if (items[i].id === id) {
           items[i].qte = valeur
