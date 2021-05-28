@@ -1,0 +1,151 @@
+{
+  "id": "a3ccc496-9b04-46e9-a457-b52af03eb817",
+  "version": "2.0",
+  "name": "liste-epicerie",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "43b5a045-0caa-4df0-b338-e8741d665462",
+    "name": "list-null",
+    "commands": [{
+      "id": "dab29d41-ee57-4d9e-b2bf-9861e5865c86",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52ffd906-28b5-4e5a-8b65-602e2b475aab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1256x813",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ccc818a-811b-4a01-917b-e9cf8037001a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Créez votre Liste",
+      "targets": [
+        ["linkText=Créez votre Liste", "linkText"],
+        ["css=.btnSecondary", "css:finder"],
+        ["xpath=//a[contains(text(),'Créez votre Liste')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div[2]/div/div[2]/div/p[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/creer')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Créez votre Liste')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6f27593-b109-4905-9ee2-ccba71c21c30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnSecondary",
+      "targets": [
+        ["css=.btnSecondary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='mon-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Créer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "079385c2-5c9d-4bd3-8def-c838e3553796",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnSecondary",
+      "targets": [
+        ["css=.btnSecondary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='mon-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Créer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fb250537-5aa6-4b8b-94e1-e0e7e02bd9d6",
+    "name": "list-complete",
+    "commands": [{
+      "id": "53d41963-27c5-49bf-83bc-2718597f81e5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc0c8696-45ca-4a42-8e99-e23d504cb957",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1256x813",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85be2de5-4099-4490-9440-9d7fae64dbd7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Créez votre Liste",
+      "targets": [
+        ["linkText=Créez votre Liste", "linkText"],
+        ["css=.btnSecondary", "css:finder"],
+        ["xpath=//a[contains(text(),'Créez votre Liste')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div[2]/div/div[2]/div/p[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/creer')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Créez votre Liste')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ca83479-d744-4fbd-989c-bda69742f73a",
+      "comment": "",
+      "command": "click",
+      "target": "id=creatList",
+      "targets": [
+        ["id=creatList", "id"],
+        ["name=creatList", "name"],
+        ["css=#creatList", "css:finder"],
+        ["xpath=//input[@id='creatList']", "xpath:attributes"],
+        ["xpath=//form[@id='mon-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12a5fe4b-861b-4fd4-b368-ab3a4ea11860",
+      "comment": "",
+      "command": "type",
+      "target": "id=creatList",
+      "targets": [
+        ["id=creatList", "id"],
+        ["name=creatList", "name"],
+        ["css=#creatList", "css:finder"],
+        ["xpath=//input[@id='creatList']", "xpath:attributes"],
+        ["xpath=//form[@id='mon-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "748adef2-7064-48a9-8d8a-d8b67163d209",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=creatList",
+      "targets": [
+        ["id=creatList", "id"],
+        ["name=creatList", "name"],
+        ["css=#creatList", "css:finder"],
+        ["xpath=//input[@id='creatList']", "xpath:attributes"],
+        ["xpath=//form[@id='mon-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "c9917917-99a5-469b-80ea-a827f3285432",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
