@@ -8,7 +8,7 @@ Dans le cadre du cours Techniques d'Intégration 2 - Cégep Garneau
 
 1. Fork/Clone le dépôt
 
-1. Créez une base de donnée locale MySQL nommée epicerie et importez les données fournies
+1. Créez une base de donnée locale MySQL nommée epicerie et importez les données fournies dans le dossier documentation
 
 1. Lancez le backend Python en utilisant un terminal
 
@@ -36,7 +36,7 @@ Dans le cadre du cours Techniques d'Intégration 2 - Cégep Garneau
 
 1. Fork/Clone le dépôt
 
-1. Créez une base de donnée locale MySQL nommée epicerie et importez les données fournies
+1. Créez une base de donnée locale MySQL nommée epicerie et importez les données fournies dans le dossier documentation
 
 1. Lancez le backend Python en utilisant un terminal
 
